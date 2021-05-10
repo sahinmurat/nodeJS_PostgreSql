@@ -18,7 +18,7 @@ sequelize
 // modelname attribute options
 
 const UserModel = sequelize.define(
-    "recruiters",
+    "recruiter",
     {
         // attribute
         // id firstName lastName update createdate
@@ -31,7 +31,6 @@ const UserModel = sequelize.define(
              allowNull : false
         }
     }
-
     ,
     {
         // second options for recruiter/recruiters

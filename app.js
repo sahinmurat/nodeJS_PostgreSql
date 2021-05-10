@@ -13,7 +13,7 @@ var app = express();
 // connect DB
 require('./models/User')
 
-// view engine setup
+// view engine setupn 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
