@@ -22,8 +22,19 @@ try {
       })
       res.redirect("/users")
     } catch (error) {
-      
+      res.send('an error accured')
     }
-    
+  }
 
+  exports.delete_user = async (req, res) =>{
+    try {
+      await UserModel.destroy({
+        where : {
+          id: req.params.id,  
+        }
+      })
+      res.redirect('/users')
+    } catch (error) {
+      console.log(error)
+    }
   }
